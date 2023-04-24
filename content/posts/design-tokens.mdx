@@ -39,7 +39,7 @@ Zapnij pasy, bo wchodzimy na grząski grunt! Nazewnictwo w programowaniu to nie 
 
 Nie jest łatwo, ale projektanci przez lata wyrobili sobie pewne konwencje, które możemy spotkać w Design Systemach. Zasady są podobne, nazwy mają być krótkie, znaczące i proste.
 
-Na tapet weźmy kolory, bo najczęściej to ich jest najwięcej i z nimi będziemy mieli trochę zabawy. Projektując Design System często mamy do czynienia z wieloma odcieniami _tego samego_ koloru. Takie odcienie możemy ułożyć na skali, zaczynając od najmniej do najbardziej intensywngo.
+Na tapet weźmy kolory, bo najczęściej to ich jest najwięcej i z nimi będziemy mieli trochę zabawy. Projektując Design System często mamy do czynienia z wieloma odcieniami _tego samego_ koloru. Takie odcienie możemy ułożyć na skali, zaczynając od najmniej do najbardziej intensywnego.
 
 <Image
   src="/images/design-tokens/tokens-names-global.png"
@@ -52,7 +52,7 @@ Tak zgrupowane odcienie nazywamy zaczynając od `100`, a kończąc najczęściej
 
 Wyobraź sobie sytuację, w której designer tworzy te wszystkie odcienie kolorów i nakłada na elementy. Pewnego dnia stwierdza, że wywraca do góry nogami tło strony i ma być ono teraz czerwone, a nie fioletowe. Ałć, mamy problem. Przecież nie zmienimy nagle koloru w `color-purple-100` na krwistą czerwień...
 
-Dlatego warto posługiwać się aliasami. Alias tworzymy na podstawie bazowego koloru, zmieniajac mu jedynie nazwę. W przypadku tekstu na stronie, zamiast `color-purple-300`, korzystamy z dedykowanego `color-text-primary`.
+Dlatego warto posługiwać się aliasami. Alias tworzymy na podstawie bazowego koloru, zmieniając mu jedynie nazwę. W przypadku tekstu na stronie, zamiast `color-purple-300`, korzystamy z dedykowanego `color-text-primary`.
 
 <Image
   src="/images/design-tokens/tokens-names-domain.png"
@@ -91,11 +91,11 @@ Wyobraź sobie, że pracujesz nad produktem, który dostępny jest w wersji webo
 
 Pewnego dnia designer zmienia jakiś kolor/border/cokolwiek innego. Musicie się zsynchronizować. Może okazać się, że np. jakaś platforma wprowadzała _z palca_ pewne wartości. Może jakaś w ogóle jest _out of sync_ z resztą kolorów? Ten proces nie będzie aż taki prosty do wdrożenia. Musicie się zdzwonić, przegadać, ble ble - całość zabiera Wasz czas.
 
-W takich sytuacjach nieoceniona moża okazać się synchronizacja między projektem, a faktyczną implementacją Design Systemu.
+W takich sytuacjach nieoceniona może okazać się synchronizacja między projektem, a faktyczną implementacją Design Systemu.
 
 <Image
   src="/images/design-tokens/sync-clients.png"
-  alt="Grafika przedstawiająca synchronziacaję figmy z klientami. Logo Figmy znajduje się na samej górze, a pod nim widnieją logo React.js, Android i Swift. Od logo Figmy, przeciągnięte są strzałki do poszczególynch klientów - symbolizują one synchronizację pomiędzy narzędziami."
+  alt="Grafika przedstawiająca synchronizację figmy z klientami. Logo Figmy znajduje się na samej górze, a pod nim widnieją logo React.js, Android i Swift. Od logo Figmy, przeciągnięte są strzałki do poszczególynch klientów - symbolizują one synchronizację pomiędzy narzędziami."
 />
 
 My dziś skupimy się na integracji tylko z jedną platformą - Frontendem. Skorzystamy z GitHuba, a następnie przerobimy udostępniane tokeny na zmienne w CSS, lecimy!
